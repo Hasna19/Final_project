@@ -4,3 +4,5 @@ output: html_document
 ---
 
 This repository belongs to *Hasna*
+
+I'm Hasna, and I did not use any AI tools for this project :)
