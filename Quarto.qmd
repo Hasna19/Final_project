@@ -1,0 +1,64 @@
+---
+title: "My_doc"
+author: "Hasna Alghamdi"
+format: html
+theme: yeti
+execute:
+  echo: true
+  error: true
+---
+
+The table, regression results, and figure, with appropriate captions 
+```{r}
+#| message: false
+#| warning: false
+
+(install.packages("gtsummary", dependencies = TRUE))
+library(gtsummary)
+data <- read.csv(here::here("Data", "healthy_lifestyle_city_2021.csv"))
+
+tbl_summary(
+	data,
+	include=
+		c(City, Rank, Happiness_levels, Outdoor_activities,
+						  YLE))
+```
+
+```{r}
+#| label: tbl-one
+#| tbl-cap: "This is a table of a dataframe"
+knitr::kable(mtcars)
+```
+
+
+```{r}
+#| label: hist
+#| fig-cap: "This is a histogram"
+hist(rnorm(100))
+```
+Cross-references to a table and a figure at least once each
+```{r}
+#| label: tbl-univarible-regression
+#| tbl-cap: "Linear regression"
+rank_tbl <- tbl_uvregression(
+	data,
+	y = Rank,
+	include = c(Happiness_levels, Outdoor_activities,YLE
+	),
+	method = lm)
+```
+Table @tbl-univarible-regression shows the associations between happiness, outdoor activities, life expectancy, and city rank! 
+
+
+Inline R code in at least 2 places, 1 pulling a statistic from a table (i.e., using gtsummary::inline_text()) and 1 printing something else (like we did with the mean age in the example)
+```{r}
+stats <-list(
+	n= nrow(data),
+	mean_YLE =mean(data$YLE, na.rm=TRUE),
+	mean_happy=mean(data$Happiness_levels, na.rm=TRUE)
+)
+```
+ There were `r stats$n` cities, with a mean of ife expectancy `r stats$mean_YLE`
+ and a mean of happiness score of `r stats$mean_happy`
+
+A brief description of the data, including its source 

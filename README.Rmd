@@ -6,3 +6,50 @@ output: html_document
 This repository belongs to *Hasna*
 
 I'm Hasna, and I did not use any AI tools for this project :)
+
+
+Data Dictionary (not required but may be helpful)
+
+Variable 
+Type
+Description 
+City
+Character 
+44 different cities 
+Rank 
+Numerical
+44 unique values 
+Sunshine hours (City)
+Numerical 
+Number of Sunshine hours per city 
+Cost of a bottle of water (City)
+Numerical 
+Price for a bottle of water, £ currency 
+Obesity levels (Country)
+Numerical
+The percentage of the obesity level in each city 
+Life expectancy (years) (Country)
+Numerical
+Life expectancy: total number of years per country 
+Pollution (Index score) (City)
+Numerical 
+Score of the Air Quality Index for each city 
+Annual avg. hours worked
+Numerical
+Average working hours per year for each city 
+Happiness levels (Country)
+Numerical 
+Average level of happiness per country* 
+Outdoor activities (City)
+Numerical 
+Number of outdoor activities per city 
+Number of take-out places (City)
+Numerical 
+Number of outdoor activities per city 
+Cost of a monthly gym membership (City)
+Numerical 
+ Cost of a monthly gym membership per city, £ currency 
+
+
+*World Happiness Report. Chapter 2. Caring and sharing: global analysis of happiness and kindness. https://www.worldhappiness.report/ed/2025/caring-and-sharing-global-analysis-of-happiness-and-kindness/#happiness-ranking. Published 2025. Accessed October 26, 2025.
+
