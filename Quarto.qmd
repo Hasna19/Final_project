@@ -60,5 +60,9 @@ stats <-list(
 ```
  There were `r stats$n` cities, with a mean of ife expectancy `r stats$mean_YLE`
  and a mean of happiness score of `r stats$mean_happy`
+```{r}
+inline_text(rank_tbl, variable= "YLE")
+```
+Life expectancy was not statistically significant with the city rank `inline_text(rank_tbl, variable= "YLE")`
 
 A brief description of the data, including its source 
