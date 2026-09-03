@@ -60,9 +60,17 @@ stats <-list(
 ```
  There were `r stats$n` cities, with a mean of ife expectancy `r stats$mean_YLE`
  and a mean of happiness score of `r stats$mean_happy`
+ 
 ```{r}
 inline_text(rank_tbl, variable= "YLE")
 ```
-Life expectancy was not statistically significant with the city rank `inline_text(rank_tbl, variable= "YLE")`
+Life expectancy was not statistically significant with the city rank ("-0.78 (95% CI -1.5, -0.06; p=0.034)").
 
 A brief description of the data, including its source 
+
+**The data include 44 unique values, and 10 different columns**
+It measures the association between the happiness level for each country, 
+different variables like the Sunshine hours, Life expectancy(years),Outdoor activities
+, and more.
+
+**Healthy Lifestyle Cities Report 2021 from** https://www.lenstore.co.uk/research/healthy-lifestyle-report/

@@ -35,12 +35,12 @@ tbl_uvregression(
 install.packages("ggplot2")
 library(ggplot2)
 hist(data$Happiness_levels)
-ggplot(data= {data},
+his <-ggplot(data= {data},
 			 aes(x= {YLE},
 			 		fill= YLE)) +
 	geom_bar()+
 	labs(x= "Year_Life_Expectancy")
-
+his
 #4. Write and use a function that does something with the data:
 
 summarize_var_bad <- function(data, variable) {
@@ -59,5 +59,9 @@ plot_hist(data, Happiness_levels)
 
 #5. Create and render a quarto document that includes at least:
 
-
+#6.Read in a dataset and save a file (can be data, table, figure, etc.)
+# Use the {here} package every time you refer to file paths (at least twice)
+library(here)
+ggsave(here( "Data", "YLE_barplot.png"),
+	plot = his)
 

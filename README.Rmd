@@ -7,6 +7,10 @@ This repository belongs to *Hasna*
 
 I'm Hasna, and I did not use any AI tools for this project :)
 
+*** I used AI for the function here, to save the histogram plot! 
+
+the prompt can be found in this link: https://chatgpt.com/share/6a98d4f2-8560-83ed-a4db-636a892b3da6 
+ I checked the reesult by clicking in the Data folder from the files in my R space.
 
 Data Dictionary (not required but may be helpful)
 
