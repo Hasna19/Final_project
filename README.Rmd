@@ -12,8 +12,7 @@ I'm Hasna, and I did not use any AI tools for this project :)
 the prompt can be found in this link: https://chatgpt.com/share/6a98d643-aefc-83eb-9473-39b7ef8b613f
  I checked the reesult by clicking in the Data folder from the files in my R space.
 
-Data Dictionary (not required but may be helpful)
-
+Data Dictionary:
 Variable 
 Type
 Description 
